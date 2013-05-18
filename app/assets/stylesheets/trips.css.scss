@@ -1,0 +1,61 @@
+#main_wrap{
+  background: #ffffff;
+  min-height: 600px;
+}
+
+.leftCol{
+  padding-left: 20px;
+}
+
+.hero{
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  img{width: 100%; position: absolute;top:0px; left: 0px;}
+  .info{
+    position: absolute;
+    bottom: 0px;
+    width: auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    h2{
+      color: #ffffff;
+    }
+    p{
+      color: #ffffff;
+    }
+  }
+  
+}
+
+.media .vote{
+  background: #f1f1f1;
+  overflow: hidden;
+  padding:5px;
+  margin:20px 0;
+  ul{
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    li{
+      float: left;
+      list-style: none;
+      margin-right: 20px;
+      font-size: 12px;
+      a{font-size: 12px}
+    }
+  }
+}
+
+.nav-tabs .new_activity{
+  float: right;
+}
+
+.sub_nav{
+  margin-top: 69px;
+}
+
+.thumbnails{
+  margin:20px 0 20px;
+}

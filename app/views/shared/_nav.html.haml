@@ -1,0 +1,19 @@
+.navbar.navbar-inverse
+  .navbar-inner
+    %ul.nav
+      %li.active
+        %a{:href => "#"} Home
+      %li
+        %a{:href => "#"} Link
+      %li
+        %a{:href => "/trips/new",  :"data-toggle" => "modal", :"data-target" => "#newtrip"} Create Trip
+
+#newtrip.modal.hide.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-header
+    %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
+    %h3#myModalLabel Create a new trip
+  .modal-body
+  .modal-footer
+    %button.btn{"aria-hidden" => "true", "data-dismiss" => "modal"} Close
+    %button.btn.btn-primary.create_trip Create New Trip
+

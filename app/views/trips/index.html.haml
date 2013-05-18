@@ -1,0 +1,60 @@
+.container
+  =render "shared/nav"
+#main_wrap.container
+
+  .row
+    .span12.hero
+      %img{:src => "/assets/haiti.jpg"}
+      .info
+        %h2 Cruise to haiti, jamaica, and mexico
+        %p
+
+          On the north coast of Haiti, surrounded by beautiful mountain slopes and exotic foliage, sits Labadee®, Royal Caribbean's private paradise. This exclusive destination offers pristine beaches, breathtaking scenery and spectacular water activities. We even have an amazing new Aqua Park for kids. Regardless of where you go, you'll find yourself embraced by the beautiful landscape. Labadee's native charm, along with its natural beauty, make this a destination not to be missed, and only Royal Caribbean can take you there.
+
+  .row
+    .span8
+      .leftCol
+        %h2 Activities
+        =render "trips/nav"
+        .media
+          %a.pull-left{:href => "#"}
+            %img.media-object{:src => "http://dummyimage.com/64x64/000/fff"}/
+          .media-body
+            %h4.media-heading Media heading
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+            %h6 Price: $30.00
+          .vote
+            Visit Website: 
+            %a{:href => "#"} http://www.royalcarribena.com
+            %ul
+              %li
+                %span.icon-thumbs-up
+                %a{:href => "#"} 0 Votes Yes
+              %li
+                %span.icon-thumbs-down
+                %a{:href => "#"} 0 Votes No
+
+
+        .media
+          %a.pull-left{:href => "#"}
+            %img.media-object{:src => "http://dummyimage.com/64x64/000/fff"}/
+          .media-body
+            %h4.media-heading Media heading
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+          .vote
+            %ul
+              %li
+                %span.icon-thumbs-up
+                %a{:href => "#"} 0 Votes Yes
+              %li
+                %span.icon-thumbs-down
+                %a{:href => "#"} 0 Votes No
+      
+    .span4
+      %ul.nav.nav-list.sub_nav
+        %li.nav-header List header
+        %li.active
+          %a{:href => "#"} Home
+        %li
+          %a{:href => "#"} Library
+

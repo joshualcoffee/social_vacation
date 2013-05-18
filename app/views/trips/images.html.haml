@@ -1,0 +1,13 @@
+.container
+  =render "shared/nav"
+  =form_tag find_images_path, :method => :get do 
+    =text_field_tag :url
+
+#main_wrap.container
+  .row
+    .span12
+      %ul.thumbnails
+        -if @images 
+          -@images.each do |image|
+            %li.span3
+              =link_to( image_tag(image), new_trip_path(:url => image), :remote => true, :class => "thumbnail")
